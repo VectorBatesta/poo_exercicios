@@ -4,25 +4,25 @@ import java.util.Scanner;
 
 public class Exercicio1 {
 	Scanner inputTeclado = new Scanner(System.in);
-    public float valor1, valor2;
+	public float valor1, valor2;
 	public int opcao;
 	public String resultadoDeOperacao, resultadoFinal;
 	
 	
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 		Exercicio1 obj = new Exercicio1();
 		obj.Exercicio1();
-    }
+	}
     
 	public void Exercicio1(){
 		System.out.println("Selecione a opcao:\n1-Abs;\n2-Ceil;\n3-Cos;\n4-Exp;\n5-Floor;\n6-Log;\n7-Max;\n8-Min;\n9-Pow;\n10-Sqrt");
 		this.opcao = pegarOpcao();
-		
+
 		this.resultadoFinal = selecaoDeOperacao();
-		
+
 		System.out.println("Resultado eh: " + resultadoFinal);
 	}
-	
+
 	public int pegarOpcao(){
 		return inputTeclado.nextInt();
 	}
@@ -77,43 +77,43 @@ public class Exercicio1 {
 	}
 	
 	
-	public String Abs(){
+	public String abs(){
 		pegarUmValor();
 		return Float.toString(java.lang.Math.abs(valor1));
 	}
-	public String Ceil(){
+	public String ceil(){
 		pegarUmValor();
 		return Double.toString(java.lang.Math.ceil(valor1));
 	}
-	public String Cos(){
+	public String cos(){
 		pegarUmValor();
 		return Double.toString(java.lang.Math.cos(valor1));
 	}
-	public String Exp(){
+	public String exp(){
 		pegarUmValor();
 		return Double.toString(java.lang.Math.exp(valor1));
 	}
-	public String Floor(){
+	public String floor(){
 		pegarUmValor();
 		return Double.toString(java.lang.Math.floor(valor1));
 	}
-	public String Log(){
+	public String log(){
 		pegarUmValor();
 		return Double.toString(java.lang.Math.log(valor1));
 	}
-	public String Max(){
+	public String max(){
 		pegarDoisValores();
 		return Float.toString(java.lang.Math.max(valor1, valor2));
 	}
-	public String Min(){
+	public String min(){
 		pegarDoisValores();
 		return Float.toString(java.lang.Math.min(valor1, valor2));
 	}
-	public String Pow(){
+	public String pow(){
 		pegarDoisValores();
 		return Double.toString(java.lang.Math.pow(valor1, valor2));
 	}
-	public String Sqrt(){
+	public String sqrt(){
 		pegarUmValor();
 		return Double.toString(java.lang.Math.sqrt(valor1));
 	}
